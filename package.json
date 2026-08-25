@@ -1,0 +1,52 @@
+{
+	"name": "create-timbic",
+	"type": "module",
+	"version": "0.0.1",
+	"description": "Timbic's scaffolder cli",
+	"author": "Timur Bikmuhametov <tim.bic22@gmail.com>",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Timbic/stylelint-config.git"
+	},
+	"exports": {
+		".": "./dist/index.js"
+	},
+	"main": "./dist/index.js",
+	"files": [
+		"dist"
+	],
+	"publishConfig": {
+		"access": "public"
+	},
+	"scripts": {
+		"dev": "tsdown --watch",
+		"build": "tsdown",
+		"fmt": "prettier --cache --write .",
+		"fmt:chk": "prettier --check .",
+		"lint": "eslint --cache",
+		"lint:fix": "eslint --cache --fix",
+		"typecheck": "tsc --noEmit",
+		"release": "bumpp",
+		"prepare": "husky"
+	},
+	"devDependencies": {
+		"@timbic/eslint-config": "1.1.0",
+		"@timbic/prettier-config": "1.1.4",
+		"@types/node": "26.2.0",
+		"bumpp": "12.2.1",
+		"eslint": "10.9.0",
+		"husky": "9.1.7",
+		"lint-staged": "17.3.0",
+		"prettier": "3.9.6",
+		"tsdown": "0.22.14",
+		"typescript": "6.0.3"
+	},
+	"lint-staged": {
+		"*/**/*.{js,ts,md,json}": [
+			"pnpm fmt",
+			"pnpm lint:fix"
+		]
+	},
+	"packageManager": "pnpm@11.22.0"
+}
