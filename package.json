@@ -14,14 +14,19 @@
 	},
 	"main": "./dist/index.js",
 	"files": [
-		"dist"
+		"dist",
+		"index.js"
 	],
+	"engines": {
+		"node": ">=22.22.0"
+	},
 	"publishConfig": {
 		"access": "public"
 	},
 	"scripts": {
 		"dev": "tsdown --watch",
 		"build": "tsdown",
+		"execute": "node index.js",
 		"fmt": "prettier --cache --write .",
 		"fmt:chk": "prettier --check .",
 		"lint": "eslint --cache",
