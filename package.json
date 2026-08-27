@@ -7,14 +7,18 @@
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/Timbic/stylelint-config.git"
+		"url": "git+https://github.com/Timbic/create-timbic.git"
 	},
 	"exports": {
 		".": "./dist/index.js"
 	},
 	"main": "./dist/index.js",
+	"bin": {
+		"create-timbic": "index.js"
+	},
 	"files": [
 		"dist",
+		"template-*",
 		"index.js"
 	],
 	"engines": {
@@ -36,13 +40,17 @@
 		"prepare": "husky"
 	},
 	"devDependencies": {
+		"@clack/prompts": "1.7.0",
 		"@timbic/eslint-config": "1.1.0",
 		"@timbic/prettier-config": "1.1.4",
+		"@types/cross-spawn": "^6.0.6",
 		"@types/node": "26.2.0",
 		"bumpp": "12.2.1",
+		"cross-spawn": "7.0.6",
 		"eslint": "10.9.0",
 		"husky": "9.1.7",
 		"lint-staged": "17.3.0",
+		"mri": "1.2.0",
 		"prettier": "3.9.6",
 		"tsdown": "0.22.14",
 		"typescript": "6.0.3"
