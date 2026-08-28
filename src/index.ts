@@ -184,7 +184,7 @@ async function init() {
 	if (immediate === undefined) {
 		if (isInteractive) {
 			const result = await prompts.confirm({
-				message: `Install with ${pkgManager} and start now?`,
+				message: `Install dependencies with ${pkgManager} and start now?`,
 			});
 			if (prompts.isCancel(result)) {
 				return prompts.cancel("Operation cancelled");
@@ -196,7 +196,8 @@ async function init() {
 	}
 
 	// 6. Create directory for templates and copy the files
-	const root = path.join(process.cwd(), targetDir);
+	const cwd = process.cwd();
+	const root = path.join(cwd, targetDir);
 	fs.mkdirSync(root, { recursive: true });
 	prompts.log.step(`Scaffolding project in ${root}...`);
 
@@ -245,8 +246,8 @@ async function init() {
 	}
 
 	let finalMessage = "Done, now run: \n";
-	const cdProjectName = path.relative(process.cwd(), root);
-	if (root !== process.cwd()) {
+	const cdProjectName = path.relative(cwd, root);
+	if (root !== cwd) {
 		finalMessage += `\n  	cd ${cdProjectName.includes(" ") ? `"${cdProjectName}"` : cdProjectName}`;
 	}
 	finalMessage += `\n  	${pkgManager} ${pkgManager === "yarn" ? "" : "install"}`.trimEnd();
