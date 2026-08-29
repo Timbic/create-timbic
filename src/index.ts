@@ -136,7 +136,7 @@ async function init() {
 
 	// 4. Choose a template and variant
 	let template = args.template ?? "";
-	const isExistingTemplate = TEMPLATES.find((t) => t.name === template);
+	const isExistingTemplate = TEMPLATES.some((t) => t.name === template || t.variants?.some((v) => v.name === template));
 	if (args.template && !isExistingTemplate) {
 		prompts.log.warn(`"${template}" isn't a valid template.`);
 		template = "";
