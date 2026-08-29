@@ -4,7 +4,7 @@ import { fileURLToPath } from "node:url";
 import * as prompts from "@clack/prompts";
 import mri from "mri";
 import spawn from "cross-spawn";
-import { TEMPLATES, HELP_MESSAGE } from "./utils";
+import { TEMPLATES, HELP_MESSAGE, green } from "./utils";
 
 // Arguments from cli
 const args = mri<{
@@ -245,13 +245,13 @@ async function init() {
 		}
 	}
 
-	let finalMessage = "Done, now run: \n";
+	let finalMessage = "Done, now run:";
 	const cdProjectName = path.relative(cwd, root);
 	if (root !== cwd) {
-		finalMessage += `\n  	cd ${cdProjectName.includes(" ") ? `"${cdProjectName}"` : cdProjectName}`;
+		finalMessage += green(`\n  cd ${cdProjectName.includes(" ") ? `"${cdProjectName}"` : cdProjectName}`);
 	}
-	finalMessage += `\n  	${pkgManager} ${pkgManager === "yarn" ? "" : "install"}`.trimEnd();
-	finalMessage += `\n  	${pkgManager} run dev`;
+	finalMessage += green(`\n  ${pkgManager} ${pkgManager === "yarn" ? "" : "install"}`.trimEnd());
+	finalMessage += green(`\n  ${pkgManager} run dev`);
 	prompts.outro(finalMessage);
 }
 

@@ -1,6 +1,6 @@
 import util from "node:util";
 
-// Color for text formatting
+// Colors for text formatting
 type ColorName = Exclude<Parameters<typeof util.styleText>[0], readonly unknown[]>;
 
 function createColors() {
@@ -72,4 +72,4 @@ Available templates:
 ${getTemplateList()}
 `;
 
-export { TEMPLATES, HELP_MESSAGE };
+export { TEMPLATES, HELP_MESSAGE, green };
