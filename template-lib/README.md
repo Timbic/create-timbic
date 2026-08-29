@@ -1,4 +1,4 @@
-# tsdown-starter
+# lib-starter
 
 A starter for creating a TypeScript package.
 
@@ -7,17 +7,11 @@ A starter for creating a TypeScript package.
 - Install dependencies:
 
 ```bash
-npm install
-```
-
-- Run the unit tests:
-
-```bash
-npm run test
+pnpm install
 ```
 
 - Build the library:
 
 ```bash
-npm run build
+pnpm run build
 ```
