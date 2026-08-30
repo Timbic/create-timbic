@@ -11,7 +11,7 @@ function createColors() {
 	});
 }
 
-const { yellow, green, cyan, magenta } = createColors();
+const COLORS = createColors();
 
 // Available templates
 type Template = { name: string; display: string; color: (str: string) => string; variants?: Variant[] };
@@ -21,27 +21,27 @@ const TEMPLATES: Template[] = [
 	{
 		name: "lib",
 		display: "Library",
-		color: yellow,
+		color: COLORS.yellow,
 	},
 	{
 		name: "nuxt",
 		display: "Nuxt app",
-		color: green,
+		color: COLORS.green,
 		variants: [
 			{
 				name: "nuxt",
 				display: "Without Stylelint",
-				color: green,
+				color: COLORS.green,
 			},
 			{
 				name: "nuxt-stylelint",
 				display: "With Stylelint",
-				color: magenta,
+				color: COLORS.magenta,
 			},
 			{
 				name: "nuxt-tailwind",
 				display: "Maybe let's pick Tailwind!?",
-				color: cyan,
+				color: COLORS.cyan,
 			},
 		],
 	},
@@ -72,4 +72,4 @@ Available templates:
 ${getTemplateList()}
 `;
 
-export { TEMPLATES, HELP_MESSAGE, green };
+export { TEMPLATES, HELP_MESSAGE, COLORS };
