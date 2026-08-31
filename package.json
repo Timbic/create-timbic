@@ -43,7 +43,7 @@
 		"@clack/prompts": "1.7.0",
 		"@timbic/eslint-config": "1.1.0",
 		"@timbic/prettier-config": "1.1.4",
-		"@types/cross-spawn": "^6.0.6",
+		"@types/cross-spawn": "6.0.6",
 		"@types/node": "26.4.0",
 		"bumpp": "12.2.2",
 		"cross-spawn": "7.0.6",
