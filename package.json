@@ -33,8 +33,8 @@
 		"execute": "node index.js",
 		"fmt": "prettier --cache --write .",
 		"fmt:chk": "prettier --check .",
-		"lint": "eslint --cache",
-		"lint:fix": "eslint --cache --fix",
+		"lint": "eslint --cache --config eslint.config.ts",
+		"lint:fix": "eslint --cache --fix --config eslint.config.ts",
 		"typecheck": "tsc --noEmit",
 		"release": "bumpp",
 		"prepare": "husky"
