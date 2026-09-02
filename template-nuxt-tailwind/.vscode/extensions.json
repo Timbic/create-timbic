@@ -1,0 +1,15 @@
+{
+	"recommendations": [
+		"esbenp.prettier-vscode",
+		"dbaeumer.vscode-eslint",
+		"github.vscode-github-actions",
+		"antfu.goto-alias",
+		"pkief.material-icon-theme",
+		"vue.volar",
+		"sdras.vue-vscode-snippets",
+		"nuxtr.nuxtr-vscode",
+		"antfu.iconify",
+		"nuxt.mdc",
+		"bradlc.vscode-tailwindcss"
+	]
+}
