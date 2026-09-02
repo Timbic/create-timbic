@@ -1,1 +1,1 @@
-pnx lint-staged
+pnx lint-staged --config package.json
