@@ -3,6 +3,7 @@
 	"extends": ["config:recommended", ":pinDevDependencies", ":widenPeerDependencies", "group:allNonMajor"],
 	"baseBranchPatterns": ["main"],
 	"ignoreDeps": ["pnpm"],
+	"ignorePaths": ["template-*/**"],
 	"minimumReleaseAge": "1 day",
 	"postUpdateOptions": ["pnpmDedupe"],
 	"vulnerabilityAlerts": {
