@@ -1,7 +1,7 @@
 {
 	"name": "create-timbic",
 	"type": "module",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Timbic's scaffolder cli",
 	"author": "Timur Bikmuhametov <tim.bic22@gmail.com>",
 	"license": "MIT",
