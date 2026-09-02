@@ -41,10 +41,10 @@
 	},
 	"devDependencies": {
 		"@clack/prompts": "1.7.0",
-		"@timbic/eslint-config": "1.1.0",
+		"@timbic/eslint-config": "1.2.0",
 		"@timbic/prettier-config": "1.1.4",
 		"@types/cross-spawn": "6.0.6",
-		"@types/node": "26.4.0",
+		"@types/node": "26.4.1",
 		"bumpp": "12.2.2",
 		"cross-spawn": "7.0.6",
 		"eslint": "10.9.1",
