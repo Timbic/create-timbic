@@ -18,7 +18,10 @@
 	},
 	"files": [
 		"dist",
-		"template-*",
+		"template-lib",
+		"template-nuxt",
+		"template-nuxt-stylelint",
+		"template-nuxt-tailwind",
 		"index.js"
 	],
 	"engines": {
