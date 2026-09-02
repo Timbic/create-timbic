@@ -29,7 +29,7 @@
 		"vue-tsc": "^3.3.11"
 	},
 	"devDependencies": {
-		"@nuxt/eslint": "^1.17.0",
+		"@nuxt/eslint": "1.17.0",
 		"@timbic/prettier-config": "1.1.4",
 		"@timbic/stylelint-config": "1.0.0",
 		"eslint": "10.9.1",
