@@ -43,7 +43,7 @@
 		"prepare": "husky"
 	},
 	"devDependencies": {
-		"@clack/prompts": "1.8.0",
+		"@clack/prompts": "1.7.0",
 		"@timbic/eslint-config": "1.2.1",
 		"@timbic/prettier-config": "1.2.2",
 		"@types/cross-spawn": "6.0.6",
