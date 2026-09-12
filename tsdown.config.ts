@@ -5,7 +5,6 @@ export default defineConfig({
 	target: "node22",
 	minify: true,
 	fixedExtension: false,
-	deps: {
-		onlyBundle: false,
-	},
+	deps: { onlyBundle: false },
+	inputOptions: { resolve: { mainFields: ["module", "main"] } },
 });
