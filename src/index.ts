@@ -3,7 +3,7 @@ import fs from "node:fs";
 import { fileURLToPath } from "node:url";
 import * as prompts from "@clack/prompts";
 import mri from "mri";
-import spawn from "cross-spawn";
+import { spawnSync } from "cross-spawn-esm";
 import { TEMPLATES, HELP_MESSAGE, COLORS } from "./utils";
 
 // Arguments from cli
@@ -238,7 +238,7 @@ async function init() {
 		const installArgs = pkgManager === "yarn" ? [] : ["install"];
 
 		prompts.log.step(`Installing dependencies with ${pkgManager}...`);
-		const result = spawn.sync(pkgManager, installArgs, { stdio: "inherit", cwd: root });
+		const result = spawnSync(pkgManager, installArgs, { stdio: "inherit", cwd: root });
 
 		if (result.status !== 0) {
 			prompts.log.error(`Failed to install dependencies with ${pkgManager}`);
