@@ -185,8 +185,8 @@ importers:
         specifier: 12.3.0
         version: 12.3.0
       cross-spawn-esm:
-        specifier: 1.2.1
-        version: 1.2.1
+        specifier: 1.2.3
+        version: 1.2.3
       eslint:
         specifier: 10.13.0
         version: 10.13.0(jiti@2.7.0)
@@ -596,8 +596,8 @@ packages:
   cacheable@2.5.0:
     resolution: {integrity: sha512-60cyAOytib/OzBw1JNSoSV/boK1AtHryDIjvVBk7XbN4ugfkM3+Sry7fEjNgPMGgOjuaZPAp8ruZ0Cxafwyq9g==}
 
-  cross-spawn-esm@1.2.1:
-    resolution: {integrity: sha512-xbAumU3oo2Zu7/OuQGTcw3iCpHwgt69y2Tmp9eiZviTKslsabNDN3LRsV0bm0ApzrG5lkUjay/oAZ8VZsBbORw==}
+  cross-spawn-esm@1.2.3:
+    resolution: {integrity: sha512-iA2lIijzunAeiQJF/M4fZOSAc11CnnfER9qrqNB5IXKpuJroXOpCR8l86XWABHmiRinPGia7x4eFAwv1qzADCg==}
 
   cross-spawn@7.0.6:
     resolution: {integrity: sha512-uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA==}
@@ -1387,7 +1387,7 @@ snapshots:
       keyv: 5.6.0
       qified: 0.10.1
 
-  cross-spawn-esm@1.2.1: {}
+  cross-spawn-esm@1.2.3: {}
 
   cross-spawn@7.0.6:
     dependencies:
