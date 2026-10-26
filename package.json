@@ -48,13 +48,13 @@
 		"@timbic/prettier-config": "1.2.4",
 		"@types/node": "26.6.5",
 		"bumpp": "12.3.0",
-		"cross-spawn-esm": "1.2.1",
+		"cross-spawn-esm": "1.2.5",
 		"eslint": "10.13.0",
 		"husky": "9.1.7",
 		"lint-staged": "17.6.0",
 		"mri": "1.2.0",
 		"prettier": "3.9.10",
-		"tsdown": "0.23.1",
+		"tsdown": "0.23.2",
 		"typescript": "6.0.3"
 	},
 	"lint-staged": {
